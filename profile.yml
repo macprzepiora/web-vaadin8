@@ -1,0 +1,14 @@
+repositories:
+  - "https://maven.vaadin.com/vaadin-prereleases"
+dependencies:
+  compile:
+    - "com.vaadin:vaadin-spring-boot-starter:2.0.0.beta1"
+    - "com.vaadin:vaadin-spring-boot:2.0.0.beta1"
+    - "com.vaadin:vaadin-spring:2.0.0.beta1"
+    - "com.vaadin:vaadin-server:8.0.0.beta1"
+    - "com.vaadin:vaadin-client-compiled:8.0.0.beta1"
+    - "com.vaadin:vaadin-themes:8.0.0.beta1"
+features:
+  defaults:
+    - hibernate5
+    - asset-pipeline

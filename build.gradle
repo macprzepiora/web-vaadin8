@@ -1,0 +1,37 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url "https://repo.grails.org/grails/core" }
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:${project.grailsVersion}"
+    }
+}
+
+apply plugin: "org.grails.grails-profile"
+apply plugin: "org.grails.grails-profile-publish"
+
+group 'me.przepiora.vaadin-grails'
+version '0.1-SNAPSHOT'
+
+grailsPublish {
+    // TODO: Provide values here
+    user = "$grailsPublishUsername"
+    key = "$grailsPublishPassword"
+    githubSlug = 'mprzepiora/V8-G3'
+    license {
+        name = 'Apache-2.0'
+    }
+    title = "V8-G3"
+    desc = "Profile that enables Vaadin8-Grails3 integration"
+    developers = [mprzepiora:"Maciej Przepióra"]
+}
+
+repositories {
+    mavenLocal()
+    maven { url "https://repo.grails.org/grails/core" }
+}  
+
+dependencies {
+    runtime "org.grails.profiles:web:3.2.1"
+}
