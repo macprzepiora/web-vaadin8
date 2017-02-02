@@ -1,3 +1,3 @@
-# vaadin8-grails3-profile
+# Vaadin 8 Grails 3 profile
 
-This is a basic Grails 3 profile that enables Vaadin8-based development
+This is a basic Grails 3 profile that enables Vaadin8-based development. Requires at least Grails 2.3.4.
