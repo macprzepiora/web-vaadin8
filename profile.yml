@@ -1,3 +1,4 @@
+description: Extension for Web profile that enables Vaadin 8 development through Vaadin Spring Boot add-on
 repositories:
   - "https://maven.vaadin.com/vaadin-prereleases"
 dependencies:
