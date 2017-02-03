@@ -1,6 +1,9 @@
 description: Extension for Web profile that enables Vaadin 8 development through Vaadin Spring Boot add-on
 repositories:
   - "https://maven.vaadin.com/vaadin-prereleases"
+skeleton:
+  executable: ["**/gradlew*", "**/grailsw*"]
+  binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']
 dependencies:
   compile:
     - "com.vaadin:vaadin-spring-boot-starter:2.0.0.beta1"
