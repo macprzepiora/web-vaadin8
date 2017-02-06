@@ -9,9 +9,9 @@ dependencies:
     - "com.vaadin:vaadin-spring-boot-starter:2.0.0.beta1"
     - "com.vaadin:vaadin-spring-boot:2.0.0.beta1"
     - "com.vaadin:vaadin-spring:2.0.0.beta1"
-    - "com.vaadin:vaadin-server:8.0.0.beta1"
-    - "com.vaadin:vaadin-client-compiled:8.0.0.beta1"
-    - "com.vaadin:vaadin-themes:8.0.0.beta1"
+    - "com.vaadin:vaadin-server:8.0.0.beta2"
+    - "com.vaadin:vaadin-client-compiled:8.0.0.beta2"
+    - "com.vaadin:vaadin-themes:8.0.0.beta2"
 features:
   defaults:
     - hibernate5
