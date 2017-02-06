@@ -1,15 +1,17 @@
 package @grails.codegen.defaultPackage.path@
 
-import com.vaadin.server.VaadinRequest;
+import com.vaadin.server.VaadinRequest
+import com.vaadin.annotations.Theme
 import com.vaadin.spring.annotation.SpringUI
 import com.vaadin.ui.Alignment
-import com.vaadin.ui.Button;
+import com.vaadin.ui.Button
 import com.vaadin.ui.HorizontalLayout
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.UI;
+import com.vaadin.ui.Notification
+import com.vaadin.ui.UI
 
 @SpringUI
-public class MyGrailsUI extends UI{
+@Theme("@grails.codegen.projectName@-theme")
+public class @grails.codegen.projectClassName@GrailsUI extends UI{
     @Override
     protected void init(VaadinRequest request) {
         HorizontalLayout root = new HorizontalLayout()
