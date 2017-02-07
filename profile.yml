@@ -16,3 +16,4 @@ features:
   defaults:
     - hibernate5
     - asset-pipeline
+    - custom-theme

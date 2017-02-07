@@ -1,0 +1,11 @@
+@import "@grails.codegen.projectName@-theme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in @grails.codegen.projectName@-theme.scss
+
+.@grails.codegen.projectName@-theme {
+  @include addons;
+  @include @grails.codegen.projectName@-theme;
+
+}
