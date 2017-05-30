@@ -18,7 +18,6 @@ apply plugin: "org.grails.grails-profile-publish"
 group 'me.przepiora.vaadin-grails'
 
 grailsPublish {
-    // TODO: Provide values here
     user = "$grailsPublishUsername"
     key = "$grailsPublishPassword"
     githubSlug = 'macprzepiora/web-vaadin8'
