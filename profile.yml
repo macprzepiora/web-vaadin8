@@ -1,19 +1,21 @@
 description: Extension for Web profile that enables Vaadin 8 development through Vaadin Spring Boot add-on
+build:
+  repositories:
+    - https://dl.bintray.com/macprzepiora/gradle-plugins/
+  plugins:
+    - "com.devsoap.plugin.vaadin"
 repositories:
   - jcenter()
 skeleton:
   executable: ["**/gradlew*", "**/grailsw*"]
   binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']
 dependencies:
+  build:
+    "com.devsoap.plugin:gradle-vaadin-plugin:1.2.0.beta1-macprzepiora2"
   compile:
     - "com.vaadin:vaadin-spring-boot-starter:2.+"
-    - "com.vaadin:vaadin-spring-boot:2.+"
-    - "com.vaadin:vaadin-spring:2.+"
-    - "com.vaadin:vaadin-server:8.+"
-    - "com.vaadin:vaadin-client-compiled:8.+"
-    - "com.vaadin:vaadin-themes:8.+"
 features:
   defaults:
     - hibernate5
     - asset-pipeline
-    - custom-theme
+    - gradle-vaadin-plugin

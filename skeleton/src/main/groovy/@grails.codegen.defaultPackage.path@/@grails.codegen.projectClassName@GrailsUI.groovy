@@ -1,4 +1,4 @@
-package @grails.codegen.defaultPackage.path@
+package @grails.codegen.defaultPackage@
 
 import com.vaadin.server.VaadinRequest
 import com.vaadin.annotations.Theme
@@ -9,7 +9,7 @@ import com.vaadin.ui.HorizontalLayout
 import com.vaadin.ui.Notification
 import com.vaadin.ui.UI
 
-@SpringUI(path="/vaadinui")
+@SpringUI(path="/vaadinUI")
 @Theme("@grails.codegen.projectName@-theme")
 public class @grails.codegen.projectClassName@GrailsUI extends UI{
     @Override

@@ -1,0 +1,7 @@
+description: Adds Gradle Vaadin plugin to a Grails project
+build:
+    plugins:
+        - "com.devsoap.plugin.vaadin"
+dependencies:
+    build:
+        - "com.devsoap.plugin:gradle-vaadin-plugin:1.2.0.beta1-macprzepiora2"
