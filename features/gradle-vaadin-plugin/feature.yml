@@ -1,0 +1,12 @@
+description: Adds support for Vaadin plugin for Gradle
+build:
+  plugins:
+    - "com.devsoap.plugin.vaadin"
+dependencies:
+  build:
+    - "com.devsoap.plugin:gradle-vaadin-plugin:1.2.0.beta1-macprzepiora2"
+# The feature skeleton includes Gradle 4.0 wrapper instead of the
+# default 3.5 because Gradle Vaadin plugin requires it
+skeleton:
+  executable: ["**/gradlew*", "**/grailsw*"]
+  binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']

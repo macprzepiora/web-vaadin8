@@ -1,19 +1,30 @@
-description: Extension for Web profile that enables Vaadin 8 development through Vaadin Spring Boot add-on
+description: Profile for Web applications with Vaadin 8 on side
 repositories:
-  - jcenter()
-skeleton:
-  executable: ["**/gradlew*", "**/grailsw*"]
-  binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']
+  - "mavenLocal()"
+  - "https://repo.grails.org/grails/core"
+features:
+    defaults:
+        - hibernate5
+        - events
+    required:
+        - gsp
+        - asset-pipeline
+        - gradle-vaadin-plugin
 dependencies:
   compile:
     - "com.vaadin:vaadin-spring-boot-starter:2.+"
-    - "com.vaadin:vaadin-spring-boot:2.+"
-    - "com.vaadin:vaadin-spring:2.+"
-    - "com.vaadin:vaadin-server:8.+"
-    - "com.vaadin:vaadin-client-compiled:8.+"
-    - "com.vaadin:vaadin-themes:8.+"
-features:
-  defaults:
-    - hibernate5
-    - asset-pipeline
-    - custom-theme
+build:
+  repositories:
+    - "https://dl.bintray.com/macprzepiora/gradle-plugins/"
+  plugins:
+    - war
+    - org.grails.grails-web
+  excludes:
+    - org.grails.grails-core
+
+skeleton:
+  executable: ["**/gradlew*", "**/grailsw*"]
+  binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']
+
+instructions: "Warning! Gradle wrapper doesn't fully work. Please regenerate it with the following command:\n\ngradle wrapper --gradle-version 4.0\n\nAlso please note that you need to edit build.gradle. Move line that reads 'apply plugin:\"com.devsoap.plugin.vaadin\"' to the top of apply plugin block."
+
