@@ -1,21 +1,27 @@
-description: Extension for Web profile that enables Vaadin 8 development through Vaadin Spring Boot add-on
+description: Profile for Web applications with Vaadin 8 on side
+repositories:
+  - "mavenLocal()"
+  - "https://repo.grails.org/grails/core"
+features:
+    defaults:
+        - hibernate5
+        - events
+    required:
+        - gsp
+        - asset-pipeline
+        - gradle-vaadin-plugin
+dependencies:
+  compile:
+    - "com.vaadin:vaadin-spring-boot-starter:2.+"
 build:
   repositories:
-    - https://dl.bintray.com/macprzepiora/gradle-plugins/
+    - "https://dl.bintray.com/macprzepiora/gradle-plugins/"
   plugins:
-    - "com.devsoap.plugin.vaadin"
-repositories:
-  - jcenter()
+    - war
+    - org.grails.grails-web
+  excludes:
+    - org.grails.grails-core
+
 skeleton:
   executable: ["**/gradlew*", "**/grailsw*"]
   binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']
-dependencies:
-  build:
-    "com.devsoap.plugin:gradle-vaadin-plugin:1.2.0.beta1-macprzepiora2"
-  compile:
-    - "com.vaadin:vaadin-spring-boot-starter:2.+"
-features:
-  defaults:
-    - hibernate5
-    - asset-pipeline
-    - gradle-vaadin-plugin
