@@ -14,8 +14,6 @@ dependencies:
   compile:
     - "com.vaadin:vaadin-spring-boot-starter:2.+"
 build:
-  repositories:
-    - "https://dl.bintray.com/macprzepiora/gradle-plugins/"
   plugins:
     - war
     - org.grails.grails-web
