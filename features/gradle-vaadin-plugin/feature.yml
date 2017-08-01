@@ -4,7 +4,7 @@ build:
     - "com.devsoap.plugin.vaadin"
 dependencies:
   build:
-    - "com.devsoap.plugin:gradle-vaadin-plugin:1.2.0"
+    - "com.devsoap.plugin:gradle-vaadin-plugin:1.2.1"
 # The feature skeleton includes Gradle 4.0 wrapper instead of the
 # default 3.5 because Gradle Vaadin plugin requires it
 skeleton:
