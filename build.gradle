@@ -37,3 +37,11 @@ repositories {
 dependencies {
     runtime "org.grails.profiles:web:3.3.0.RC1"
 }
+
+jar {
+    manifest {
+        attributes("Vaadin-Package-Version": "1",
+                "Implementation-Title": "Grails web-vaadin8 profile",
+                "Implementation-Version": version)
+    }
+}
