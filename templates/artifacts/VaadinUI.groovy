@@ -8,7 +8,7 @@ import com.vaadin.ui.HorizontalLayout
 import com.vaadin.ui.Notification
 import com.vaadin.ui.UI
 
-@SpringUI(path="/@artifact.name@UI")
+@SpringUI(path="/"+@artifact.name@UI)
 public class @artifact.name@GrailsUI extends UI{
     @Override
     protected void init(VaadinRequest request) {
