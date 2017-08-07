@@ -10,4 +10,4 @@ steps:
  - command: render
    template: templates/artifacts/VaadinUI.groovy
    convention: UI
-   destination: src/main/groovy/@artifact.package.path@/@artifact.name@UI.groovy
+   destination: src/main/groovy/@artifact.package.path@/@artifact.name@GrailsUI.groovy
