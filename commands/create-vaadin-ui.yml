@@ -1,0 +1,13 @@
+description:
+    - Creates a Vaadin UI
+    - usage: 'create-vaadin-ui [UI name]'
+    - completer: org.grails.cli.interactive.completers.DomainClassCompleter
+    - argument: Vaadin UI Name
+      description: The name of the UI
+    - flag: force
+      description: Whether to override existing files
+steps:
+ - command: render
+   template: templates/artifacts/VaadinUI.groovy
+   convention: UI
+   destination: src/main/groovy/@artifact.package.path@/@artifact.name@UI.groovy
